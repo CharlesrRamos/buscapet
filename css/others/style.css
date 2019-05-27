@@ -1,0 +1,260 @@
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    transition: box-shadow .3s;
+    border-radius:10px;
+    border: 1px solid #ccc;
+    background: #fff;
+    float: left;
+   
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  
+  
+  .dropbtn {
+    background-color: #2D888F;
+    color: white;
+    padding: 9.5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+ 
+
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #2D888F;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+  
+  .box {
+    transition: box-shadow .3s;
+    border-radius:10px;
+    border: 1px solid #ccc;
+    background: #fff;
+    float: left;
+    
+  }
+  .box:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+  }
+  .petshop {
+    display: inline-block;
+    border: 1px solid;
+    padding: 11px 21px;
+    vertical-align: middle;
+    background: #2D888F;
+    color: white;
+    border-radius: 6px;
+    font-size: 20px;
+    font-family: helvetica, serif;
+    text-decoration: none;
+  }
+  #owl-demo .item2 {
+    background: #42bdc2;
+    padding: 30px 0px;
+    margin: 10px;
+    color: rgb(190, 18, 18);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+  }  
+
+  .restaurant-card {
+    padding: 19px 20px 16px;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    width: 100%;
+    cursor: default;
+    position: relative; }
+    @media only screen and (max-width: 767px) {
+      .restaurant-card::before {
+        content: '';
+        width: calc(100% - 40px);
+        height: 0;
+        display: block;
+        background: transparent;
+        position: absolute;
+        left: 20px;
+        top: 0;
+        border-top: 1px solid #f5f0eb; }
+      .restaurant-card:first-child::before {
+        display: none; }
+      .restaurant-card:last-of-type {
+        border-bottom: 1px solid #f5f0eb; } }
+    @media only screen and (min-width: 768px) {
+      .restaurant-card {
+        border: 1px solid #dcdcdc;
+        display: inline-flex;
+        width: calc((100% - 20px) / 2);
+        margin: 0 20px 40px 0;
+        cursor: pointer;
+        border-radius: 4px;
+        background: transparent;
+        transition: 200ms;
+        min-height: 100px; }
+        .restaurant-card:hover {
+          background: #f7f7f7; } }
+    @media only screen and (min-width: 768px) and (max-width: 960px) {
+      .restaurant-card:nth-child(2n), .restaurant-card:last-child {
+        margin-right: 0; } }
+    @media only screen and (min-width: 960px) {
+      .restaurant-card {
+        width: calc((100% - 40px) / 3);
+        margin-right: 20px; }
+        .restaurant-card:nth-child(3n), .restaurant-card:last-child {
+          margin: 0 0 40px 0; } }
+    @media only screen and (min-width: 768px) and (max-width: 960px) {
+      .restaurant-card {
+        width: calc((100% - 20px) / 2); } }
+    .restaurant-card:focus {
+      outline: none;
+      background-color: #fafafa; }
+    .restaurant-card--closed {
+      -webkit-filter: grayscale(1);
+              filter: grayscale(1);
+      opacity: 0.7; }
+    .restaurant-card--closed .restaurant-item__title {
+        color: #919191; }
+    .restaurant-card__image {
+      position: relative;
+      flex-shrink: 0;
+      width: 50px;
+      height: 50px;
+      overflow: hidden;
+      border-radius: 50%; }
+    .restaurant-card__image svg {
+        color: #fff;
+        fill: #fff; }
+    @media only screen and (min-width: 960px) {
+        .restaurant-card__image {
+          width: 80px;
+          height: 80px;
+          border: 1px solid #dcdcdc; } }
+    .restaurant-card__image--placeholder {
+        background-color: #dbdad9; }
+    .restaurant-card__image .icon-marmita {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        width: 80%;
+        height: 80%; }
+    .restaurant-card__infos {
+      flex-grow: 1;
+      min-width: 0;
+      padding-left: 0.75em; }
+    .restaurant-card__infos h3 {
+        font-size: 1em;
+        margin: 0; }
+    .restaurant-card__title, .restaurant-card__subtitle {
+      line-height: 1.1;
+      margin-top: 0;
+      margin-bottom: 0.25em; }
+    @media only screen and (min-width: 960px) {
+        .restaurant-card__title, .restaurant-card__subtitle {
+          font-size: 0.875rem;
+          line-height: 1.1875em; } }
+    .restaurant-card__title {
+      display: flex;
+      font-weight: 400;
+      color: #717171;
+      font-size: 1rem;
+      justify-content: space-between;
+      align-items: baseline;
+      min-width: 0; }
+    .restaurant-card__title-truncated {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        flex-grow: 1; }
+    .restaurant-card__rating {
+      color: #e7a74e;
+      line-height: 0;
+      font-size: 0.9375rem;
+      display: inline-block;
+      flex-shrink: 0; }
+    .restaurant-card__rating .icon-marmita {
+        width: 14px;
+        height: 14px;
+        -webkit-transform: translateY(1px);
+                transform: translateY(1px);
+        margin-right: 2px; }
+    .restaurant-card__rating .icon-marmita svg {
+          color: #e7a74e;
+          width: 100%;
+          height: 100%; }
+    .restaurant-card__rating--no-rating {
+        color: #c4c4c4; }
+    .restaurant-card__rating--no-rating .icon-marmita svg {
+          color: #c4c4c4;
+          fill: #c4c4c4; }
+    .restaurant-card__subtitle {
+      font-weight: 300;
+      color: #a6a29f;
+      font-size: 0.875rem;
+      line-height: 1.25em; }
+    .restaurant-card__image img {
+      max-height: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      width: auto; }
+    .restaurant-card__super {
+      color: #853b83; }
+    .restaurant-card__super svg {
+        color: #853b83;
+        fill: #853b83; }
+    .restaurant-card__extra-infos {
+      display: flex;
+      align-content: center;
+      margin-top: 5px; }
+    @media only screen and (min-width: 960px) {
+        .restaurant-card__extra-infos {
+          justify-content: space-between; } }
