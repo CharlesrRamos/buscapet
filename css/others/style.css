@@ -1,3 +1,28 @@
+@media (min-width: 991px) {
+  #call-to-action .cta-btn-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 992px) {
+  #intro .intro-info {
+    padding-bottom: 0%;
+  }
+
+
+
+
 .card {
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -69,11 +94,13 @@
   }
   
   .box {
+    padding: 1cm;
     transition: box-shadow .3s;
     border-radius:10px;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     background: #fff;
-    float: left;
+    
+    position:fixed;
     
   }
   .box:hover {
