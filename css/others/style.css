@@ -1,3 +1,12 @@
+
+
+
+.item {
+  padding: 10px;
+  width: 450px;
+  height: 200px;
+  }
+
 @media (min-width: 991px) {
   #call-to-action .cta-btn-container {
     display: -webkit-box;
